@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.Core", "Ntq.LogAdapter.Core\Ntq.LogAdapter.Core.csproj", "{9570B7AD-C29C-4804-A861-86579155FD35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.Core.Test", "Ntq.LogAdapter.Core.Test\Ntq.LogAdapter.Core.Test.csproj", "{71B5BA9A-5C77-41E6-9738-D8E391A1288C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6C29E281-6393-4E32-A3E1-7F26D870B5CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.NLog", "Ntq.LogAdapter.NLog\Ntq.LogAdapter.NLog.csproj", "{6133617F-0D51-4D61-9CF4-1FEB83373CF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.NLog.Test", "Test\Ntq.LogAdapter.NLog.Test\Ntq.LogAdapter.NLog.Test.csproj", "{454A880A-5FAF-4614-B847-1304CE974AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.Log4net", "Ntq.LogAdapter.Log4net\Ntq.LogAdapter.Log4net.csproj", "{96728985-7D00-42AF-B089-C385AB419881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9570B7AD-C29C-4804-A861-86579155FD35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9570B7AD-C29C-4804-A861-86579155FD35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9570B7AD-C29C-4804-A861-86579155FD35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9570B7AD-C29C-4804-A861-86579155FD35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6133617F-0D51-4D61-9CF4-1FEB83373CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6133617F-0D51-4D61-9CF4-1FEB83373CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6133617F-0D51-4D61-9CF4-1FEB83373CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6133617F-0D51-4D61-9CF4-1FEB83373CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454A880A-5FAF-4614-B847-1304CE974AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454A880A-5FAF-4614-B847-1304CE974AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454A880A-5FAF-4614-B847-1304CE974AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454A880A-5FAF-4614-B847-1304CE974AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96728985-7D00-42AF-B089-C385AB419881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96728985-7D00-42AF-B089-C385AB419881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96728985-7D00-42AF-B089-C385AB419881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96728985-7D00-42AF-B089-C385AB419881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71B5BA9A-5C77-41E6-9738-D8E391A1288C} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
+		{454A880A-5FAF-4614-B847-1304CE974AF9} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
+	EndGlobalSection
+EndGlobal
