@@ -1,0 +1,10 @@
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\Ntq.LogAdapter.Log4net.dll
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\Ntq.LogAdapter.Log4net.pdb
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\Ntq.LogAdapter.Core.dll
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\Ntq.LogAdapter.Core.pdb
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\obj\Debug\Ntq.LogAdapter.Log4net.csprojResolveAssemblyReference.cache
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\obj\Debug\Ntq.LogAdapter.Log4net.dll
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\obj\Debug\Ntq.LogAdapter.Log4net.pdb
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\log4net.dll
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\log4net.xml
+C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Log4net\bin\Debug\Assets\log4net.config

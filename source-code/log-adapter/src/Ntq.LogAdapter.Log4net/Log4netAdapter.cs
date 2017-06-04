@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using log4net;
 using log4net.Core;
 
@@ -15,14 +16,18 @@ namespace Ntq.LogAdapter.Log4net
             { Core.LogLevel.Error, Level.Error },
             { Core.LogLevel.Fatal, Level.Fatal },
         };
-        private static readonly Type CurrentType = typeof(Log4netAdapter);
+
+        static Log4netAdapter()
+        {
+            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo("log4net.config"));
+        }
 
         private readonly ILog _logger;
 
         public Log4netAdapter()
             : base()
         {
-            this._logger = LogManager.GetLogger(GetCallerInfo().Type);
+            this._logger = LogManager.GetLogger(GetCallerInfo().ClassName);
         }
 
         public Log4netAdapter(string name)

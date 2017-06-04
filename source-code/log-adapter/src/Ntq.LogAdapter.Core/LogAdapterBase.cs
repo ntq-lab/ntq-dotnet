@@ -14,6 +14,7 @@ namespace Ntq.LogAdapter.Core
             public int LineOfCode;
         }
         protected static readonly Type ILogType = typeof(ILog);
+        protected static readonly Type CurrentType = typeof(LogAdapterBase);
 
         public string Name { get; set; }
 

@@ -17,7 +17,8 @@ namespace Ntq.LogAdapter.NLog
         [TestMethod]
         public void NLogAdapter_Log_With_Exception_Test()
         {
-            ILog logger = new NLogAdapter();
+            //ILog logger = new NLogAdapter();
+            ILog logger = new LogFactory().GetLogger();
             try
             {
                 int a = 0;

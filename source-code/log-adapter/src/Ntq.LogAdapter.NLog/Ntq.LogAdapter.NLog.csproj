@@ -53,10 +53,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NLog.config">
+    <Content Include="Assets\NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="NLog.xsd">
+    <None Include="Assets\NLog.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />

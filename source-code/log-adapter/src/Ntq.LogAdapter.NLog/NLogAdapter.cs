@@ -14,14 +14,13 @@ namespace Ntq.LogAdapter.NLog
             { Core.LogLevel.Error, LogLevel.Error },
             { Core.LogLevel.Fatal, LogLevel.Fatal },
         };
-        private static readonly Type CurrentType = typeof(NLogAdapter);
 
         private readonly ILogger _nLogger;
 
         public NLogAdapter()
             : base()
         {
-            this._nLogger = LogManager.GetCurrentClassLogger(GetCallerInfo().Type);
+            this._nLogger = LogManager.GetLogger(GetCallerInfo().ClassName);
         }
 
         public NLogAdapter(string name)
