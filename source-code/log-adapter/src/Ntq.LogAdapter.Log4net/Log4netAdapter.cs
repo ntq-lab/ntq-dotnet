@@ -38,17 +38,33 @@ namespace Ntq.LogAdapter.Log4net
 
         public override void Log(Core.LogLevel logLevel, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LoggingEvent le = CreateLogEventInfo(logLevel, null, format, args);
+            this._logger.Logger.Log(le);
         }
 
         public override void Log(Core.LogLevel logLevel, Exception exception, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LoggingEvent le = CreateLogEventInfo(logLevel, exception, format, args);
+            this._logger.Logger.Log(le);
         }
 
         private LoggingEvent CreateLogEventInfo(Core.LogLevel logLevel, Exception exception, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LoggingEventData logData = new LoggingEventData()
+            {
+                Level = LogLevel2Log4netLevel[logLevel],
+                Message = string.Format(format, args),
+                LoggerName = this.Name,
+                LocationInfo = new LocationInfo(CurrentType),
+                TimeStampUtc = DateTime.UtcNow,
+            };
+            if (exception != null)
+            {
+                logData.ExceptionString = exception.ToString();
+            }
+
+            LoggingEvent le = new LoggingEvent(logData);
+            return le;
         }
     }
 }

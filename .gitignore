@@ -6,3 +6,17 @@
 /.vs
 /source-code/log-adapter/src/Ntq.LogAdapter.Core/bin/Debug
 /source-code/log-adapter/src/packages
+/source-code/log-adapter/src/Ntq.LogAdapter.Log4net/obj
+/source-code/log-adapter/src/Ntq.LogAdapter.Core/obj
+/source-code/log-adapter/src/Ntq.LogAdapter.Core.Test/bin/Debug
+/source-code/log-adapter/src/Ntq.LogAdapter.Core.Test/obj
+/source-code/log-adapter/src/Ntq.LogAdapter.Log4net/bin/Debug
+/source-code/log-adapter/src/Ntq.LogAdapter.Log4net/obj
+/source-code/log-adapter/src/Ntq.LogAdapter.NLog/bin/Debug
+/source-code/log-adapter/src/Ntq.LogAdapter.NLog/obj
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.Core.Test/bin/Debug
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.Core.Test/obj
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.Log4net.Test/bin/Debug
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.Log4net.Test/obj/Debug
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.NLog.Test/bin/Debug
+/source-code/log-adapter/src/Test/Ntq.LogAdapter.NLog.Test/obj
