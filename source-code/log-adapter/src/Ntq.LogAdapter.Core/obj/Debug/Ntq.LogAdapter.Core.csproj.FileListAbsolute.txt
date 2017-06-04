@@ -1,5 +1,0 @@
-C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Core\bin\Debug\Ntq.LogAdapter.Core.dll
-C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Core\bin\Debug\Ntq.LogAdapter.Core.pdb
-C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Core\obj\Debug\Ntq.LogAdapter.Core.dll
-C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Core\obj\Debug\Ntq.LogAdapter.Core.pdb
-C:\Users\tient\Source\Repos\ntq-lab\ntq-dotnet\source-code\log-adapter\src\Ntq.LogAdapter.Core\obj\Debug\Ntq.LogAdapter.Core.csprojResolveAssemblyReference.cache
