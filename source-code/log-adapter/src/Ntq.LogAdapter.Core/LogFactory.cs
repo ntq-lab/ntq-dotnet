@@ -9,7 +9,7 @@ namespace Ntq.LogAdapter.Core
     {
         private static readonly Type AdapterBaseType = typeof(LogAdapterBase);
         private static readonly LogAdapterConfiguration LogAdapterConfig = LogAdapterConfiguration.Default;
-        public static readonly LogFactory DefaultFactory = new LogFactory();
+        public static readonly LogFactory Default = new LogFactory();
 
         private readonly LogAdapterConfiguration _logAdapterConfiguration;
 

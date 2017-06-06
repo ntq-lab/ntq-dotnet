@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.Log4net.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntq.LogAdapter.Core.Test", "Test\Ntq.LogAdapter.Core.Test\Ntq.LogAdapter.Core.Test.csproj", "{71B5BA9A-5C77-41E6-9738-D8E391A1288C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTest", "Test\ConsoleAppTest\ConsoleAppTest.csproj", "{939AF553-AA8B-412F-927F-F1189FB1A513}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B5BA9A-5C77-41E6-9738-D8E391A1288C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939AF553-AA8B-412F-927F-F1189FB1A513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939AF553-AA8B-412F-927F-F1189FB1A513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939AF553-AA8B-412F-927F-F1189FB1A513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939AF553-AA8B-412F-927F-F1189FB1A513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{454A880A-5FAF-4614-B847-1304CE974AF9} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
 		{8CCB299F-B348-4BCB-896D-A275463655CE} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
 		{71B5BA9A-5C77-41E6-9738-D8E391A1288C} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
+		{939AF553-AA8B-412F-927F-F1189FB1A513} = {6C29E281-6393-4E32-A3E1-7F26D870B5CD}
 	EndGlobalSection
 EndGlobal
