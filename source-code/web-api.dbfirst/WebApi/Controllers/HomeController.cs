@@ -5,7 +5,7 @@ using DAL;
 namespace WebApi.Controllers
 {
     [RoutePrefix("home")]
-    public class HomeController : ApiController 
+    public class HomeController : ApiController
     {
         private readonly UnitOfWork _unitOfWork;
         public HomeController(UnitOfWork unitOfWork)
