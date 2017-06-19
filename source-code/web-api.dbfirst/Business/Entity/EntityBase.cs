@@ -4,8 +4,6 @@
     {
         public IdType Id { get; set; }
 
-        protected abstract void Validate();
-
         public override bool Equals(object entity)
         {
             return entity is EntityBase<IdType> && this == (EntityBase<IdType>)entity;

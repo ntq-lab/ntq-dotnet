@@ -8,6 +8,6 @@ namespace Interface
 {
     public interface IValidator
     {
-        void Validate();
+        bool Validate();
     }
 }

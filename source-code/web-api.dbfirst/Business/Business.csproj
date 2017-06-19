@@ -11,6 +11,7 @@
     <AssemblyName>Business</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,11 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessEntity\BusinessUserEntity.cs" />
     <Compile Include="Entity\EntityBase.cs" />
+    <Compile Include="Entity\UserEntity.cs" />
+    <Compile Include="ModelConversions\UserConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObject\NameObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ValueObject\" />
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5cd3efec-9487-4465-a0d5-93d8839879ad}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFDBFirst\EFDBFirst.csproj">
+      <Project>{910b49b4-7b64-4777-ab1e-96f86c990ee2}</Project>
+      <Name>EFDBFirst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\Interface.csproj">
+      <Project>{b7fc3046-7d2c-4275-9bff-05b6639f6659}</Project>
+      <Name>Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessFacade\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

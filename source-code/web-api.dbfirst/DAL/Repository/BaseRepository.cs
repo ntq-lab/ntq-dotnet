@@ -19,6 +19,7 @@ namespace DAL.Repository
             _context = context;
             _option = option;
         }
+
         public virtual TEntity Delete(TEntity entity)
         {
             entity.IsDeleted = true;

@@ -1,5 +1,8 @@
 ﻿using System.Linq;
 using System.Web.Http;
+using Business.BusinessEntity;
+using Business.Entity;
+using Business.ValueObject;
 using DAL;
 
 namespace WebApi.Controllers
@@ -8,16 +11,37 @@ namespace WebApi.Controllers
     public class HomeController : ApiController
     {
         private readonly UnitOfWork _unitOfWork;
+        private readonly BusinessUserEntity _businessUserEntity;
+
         public HomeController(UnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork;
+            _unitOfWork = unitOfWork;;
+            _businessUserEntity = new BusinessUserEntity(_unitOfWork);
         }
 
         [HttpGet]
         [Route("")]
-        public void Get()
+        public IHttpActionResult Get()
         {
-            var items = _unitOfWork.UserRepository.GetAll().ToList();
+            var items = _businessUserEntity.GetAll().ToList();
+
+            return Ok(items);
+        }
+
+        [HttpPost]
+        [Route("")]
+        public IHttpActionResult Create()
+        {
+            var userEntity = _businessUserEntity.CreateUser(new UserEntity()
+            {
+                Name = new NameObject()
+                {
+                    Title = "Mr",
+                    FirstName = "Peter"
+                },
+            });
+
+            return Ok(userEntity);
         }
     }
 }
