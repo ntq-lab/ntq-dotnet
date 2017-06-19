@@ -1,4 +1,7 @@
-﻿using Interface;
+﻿using System;
+using System.Linq;
+using Interface;
+using UtilityServices.ConstantValue;
 
 namespace Business.ValueObject
 {
@@ -15,7 +18,26 @@ namespace Business.ValueObject
 
         public string GetFullName()
         {
-            return string.Format("{0} / {1} / {2}", Title, FirstName, LastName);
+            return Title + Characters.Separating + FirstName + Characters.Separating + LastName;
+        }
+
+        public NameObject FromFullName(string fullName)
+        {
+            if (fullName.IndexOf(Characters.Separating, StringComparison.Ordinal) < 0)
+            {
+                return new NameObject()
+                {
+                    FirstName = fullName
+                };
+            }
+
+            var fullNames = fullName.Split(new [] {Characters.Separating}, StringSplitOptions.RemoveEmptyEntries);
+            return new NameObject()
+            {
+                Title = fullNames[0],
+                FirstName = fullNames[1],
+                LastName = fullNames[2]
+            };
         }
     }
 }

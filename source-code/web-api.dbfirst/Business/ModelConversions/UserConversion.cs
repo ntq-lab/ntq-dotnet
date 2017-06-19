@@ -30,10 +30,7 @@ namespace Business.ModelConversions
             return users.Select(user => new UserEntity()
             {
                 Id = user.Id,
-                Name = new NameObject()
-                {
-                    FirstName = user.DisplayName,
-                },
+                Name = new NameObject().FromFullName(user.DisplayName),
                 IsDeleted = user.IsDeleted,
                 CreatedBy = user.CreatedBy,
                 UpdatedBy = user.UpdatedBy,
@@ -61,7 +58,7 @@ namespace Business.ModelConversions
             return userEntities.Select(userEntity => new User()
             {
                 Id = userEntity.Id,
-                DisplayName = userEntity.Name.FirstName,
+                DisplayName = userEntity.Name.GetFullName(),
                 CreatedAt = userEntity.CreatedAt,
                 CreatedBy = userEntity.CreatedBy,
                 UpdatedAt = userEntity.UpdatedAt,
