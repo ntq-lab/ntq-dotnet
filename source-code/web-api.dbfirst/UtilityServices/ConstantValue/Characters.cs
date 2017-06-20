@@ -2,6 +2,6 @@
 {
     public static class Characters
     {
-        public static readonly string Seperate = " ";
+        public static readonly string Separating = " ";
     }
 }

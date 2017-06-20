@@ -61,6 +61,10 @@
       <Project>{b7fc3046-7d2c-4275-9bff-05b6639f6659}</Project>
       <Name>Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UtilityServices\UtilityServices.csproj">
+      <Project>{7a9cd1af-2a8b-496a-af3d-9b6a0f396309}</Project>
+      <Name>UtilityServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessFacade\" />
